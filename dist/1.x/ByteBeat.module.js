@@ -291,7 +291,9 @@ class ByteBeatCompiler {
   }
 
   static s_fnHeader = (function() {
-    const keys = {};
+    const keys = {
+      'import': true
+    };
     const windowKeep = new Set([
       'parseInt',
       'parseFloat',
